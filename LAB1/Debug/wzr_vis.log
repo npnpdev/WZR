@@ -1,110 +1,21 @@
 ﻿cl : wiersz polecenia warning D9035: Opcja "Gm" jest przestarzała i będzie usunięta w przyszłych wydaniach
-  vector3D.cpp
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\vector3D.cpp(7,29): warning C4305: "inicjowanie": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\vector3D.cpp(101,10): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\vector3D.cpp(101,35): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\vector3D.cpp(121,10): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\vector3D.cpp(134,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\vector3D.cpp(164,14): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-  net.cpp
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\net.cpp(47,16): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\net.cpp(189,32): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  objects.cpp
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(37,14): warning C4305: "=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(40,22): warning C4305: "=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(48,63): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(75,28): warning C4305: "inicjowanie": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(77,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(78,11): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(117,80): warning C4305: "=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(118,82): warning C4305: "=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(127,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(128,36): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(130,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(146,24): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(206,48): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(228,19): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(291,29): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(299,27): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(372,83): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(372,31): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(405,83): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(405,31): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(472,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(483,4): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(494,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(499,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(505,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\objects.cpp(518,7): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  quaternion.cpp
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\quaternion.cpp(64,41): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\quaternion.cpp(96,15): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\quaternion.cpp(103,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
-  graphics.cpp
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(57,44): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(142,14): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(147,16): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(148,41): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(149,21): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(151,23): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(152,136): warning C4305: "argument": obcięcie z "double" do "GLclampf"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(152,86): warning C4244: "argument": konwersja z "double" do "GLclampf", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(152,45): warning C4244: "argument": konwersja z "double" do "GLclampf", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(153,28): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(153,28): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(153,56): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(153,56): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(153,90): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(153,90): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(156,56): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(156,30): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(156,16): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(163,33): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(163,33): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(163,63): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(163,63): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(163,93): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(163,93): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(352,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(393,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(394,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(396,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(397,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(403,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(404,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(407,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(410,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(415,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(416,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(418,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(419,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(430,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(431,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(432,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(433,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
   main.cpp
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(19,11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(139,39): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(141,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(358,50): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(421,63): warning C4305: "/=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(428,61): warning C4305: "*=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(454,37): warning C4305: "+=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(459,37): warning C4305: "-=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(480,23): warning C4305: "/=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(488,23): warning C4305: "*=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(499,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(500,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(501,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(505,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(506,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(507,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(513,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Generowanie kodu...
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(581): warning C4715: "WndProc”: niewszystkie ścieżki kodu zwracają wartość
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\graphics.cpp(74): warning C4715: "GraphicsInitialisation”: niewszystkie ścieżki kodu zwracają wartość
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\net.cpp(203): warning C4715: "unicast_net::send”: niewszystkie ścieżki kodu zwracają wartość
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\net.cpp(194): warning C4715: "unicast_net::send”: niewszystkie ścieżki kodu zwracają wartość
-C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\net.cpp(218): warning C4715: "unicast_net::reciv”: niewszystkie ścieżki kodu zwracają wartość
-main.obj : warning LNK4075: zignorowano opcję „/EDITANDCONTINUE” z powodu określenia opcji „/SAFESEH”
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(20,11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(156,39): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(158,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(421,50): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(484,63): warning C4305: "/=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(491,61): warning C4305: "*=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(517,37): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(522,37): warning C4305: "-=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(543,23): warning C4305: "/=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(551,23): warning C4305: "*=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(562,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(563,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(564,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(568,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(569,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(570,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(576,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\main.cpp(644): warning C4715: "WndProc”: niewszystkie ścieżki kodu zwracają wartość
   wzr_vis.vcxproj -> C:\Users\PC\Desktop\Kopia_zapasowa\Ja\STUDIA\SEM6\Wirtualne zespoły robocze\LAB1\WZR\LAB1\Debug\wzr_vis.exe

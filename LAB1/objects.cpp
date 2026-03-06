@@ -21,6 +21,7 @@ extern bool if_ID_visible;
 MovableObject::MovableObject()             // konstruktor                   
 {
 	iID = (unsigned int)(rand() % 2000);  // identyfikator obiektu
+	is_collided = false; // inicjalizacja zmiennej
 	fprintf(f, "my_car->iID = %d\n", iID);
 
 	// zmienne zwi¹zame z akcjami kierowcy
@@ -220,6 +221,8 @@ void MovableObject::Simulation(float dt)          // obliczenie nowego stateu na
 	// sk³adam z powrotem wektor prêdkoœci k¹towej: 
 	//state.vV_ang = vV_ang_up + vV_ang_right + vV_ang_forward;  
 	state.vV_ang = vV_ang_up + vV_ang_horizontal;
+
+
 
 
 	float h = sry + height / 2 + clearance - state.vPos.y;  // ró¿nica wysokoœci jak¹ trzeba pokonaæ  

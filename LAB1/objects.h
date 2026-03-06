@@ -19,6 +19,7 @@ public:
 	int iID;                  // identyfikator obiektu
 
 	ObjectState state;
+	bool is_collided;		// Wykrywanie kolizji
 
 	float F, Fb;               // si³y dzia³aj¹ce na obiekt: F - pchajaca do przodu, Fb - w prawo
 	float breaking_factor;    // stopieñ hamowania Fh_max = friction*Fy*ham

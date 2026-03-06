@@ -10,6 +10,7 @@
 #include <gl\glu.h>
 #include <iterator> 
 #include <map>
+#include <stdio.h>
 
 #include "objects.h"
 #include "graphics.h"
@@ -18,6 +19,8 @@ using namespace std;
 
 FILE *f = fopen("wlog.txt", "w"); // plik do zapisu informacji testowych
 
+#define TYPE_STATE 0
+#define TYPE_COLLISION 1 // Typ komunikatu kolizji
 
 MovableObject *my_car;               // obiekt przypisany do tej aplikacji
 Environment env;
@@ -73,6 +76,18 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 		// Lock the Critical section
 		EnterCriticalSection(&m_cs);               // wejœcie na œcie¿kê krytyczn¹ - by inne w¹tki (np. g³ówny) nie wspó³dzieli³ 
 	                                               // tablicy other_cars
+		
+		// Odbieranie informacji o kolizji
+		if (frame.type == 1)
+		{
+			if (frame.iID_receiver == my_car->iID)
+			{
+				// Zatrzymujemy nasze auto
+				my_car->state.vV.x = 0;
+				my_car->state.vV.z = 0;
+			}
+		}
+		
 		if (frame.iID != my_car->iID)          // jeœli to nie mój w³asny obiekt
 		{
 			
@@ -105,8 +120,8 @@ void InteractionInitialisation()
 	time_of_cycle = clock();             // pomiar aktualnego czasu
 
 	// obiekty sieciowe typu multicast (z podaniem adresu WZR oraz numeru portu)
-	multi_reciv = new multicast_net("224.12.12.125", 10001);      // obiekt do odbioru ramek sieciowych
-	multi_send = new multicast_net("224.12.12.125", 10001);       // obiekt do wysy³ania ramek
+	multi_reciv = new multicast_net("224.12.12.129", 10001);      // obiekt do odbioru ramek sieciowych
+	multi_send = new multicast_net("224.12.12.129", 10001);       // obiekt do wysy³ania ramek
 
 
 	// uruchomienie w¹tku obs³uguj¹cego odbiór komunikatów:
@@ -144,6 +159,50 @@ void VirtualWorldCycle()
 	}
 
 	my_car->Simulation(avg_cycle_time);                    // symulacja w³asnego obiektu
+
+
+	// Detekcja kolizji
+	EnterCriticalSection(&m_cs);
+	for (map<int, MovableObject*>::iterator it = other_cars.begin(); it != other_cars.end(); ++it) {
+
+		float dist = (my_car->state.vPos - it->second->state.vPos).length();
+		float r1 = my_car->length / 2.0f;
+		float r2 = it->second->length / 2.0f;
+
+		if (dist < (r1 + r2)) {
+			// Obliczamy wektor "od nas do drugiego auta"
+			Vector3 wektor_do_auta = it->second->state.vPos - my_car->state.vPos;
+
+			// Iloczyn skalarny
+			// Jeœli wynik jest > 0, to nasza prêdkoœæ pcha nas W STRONÊ tamtego auta (pog³êbiamy kolizjê)
+			if ((my_car->state.vV ^ wektor_do_auta) > 0)
+			{
+				my_car->is_collided = true;
+
+				// Zatrzymujemy auto
+				my_car->state.vV.x = 0;
+				my_car->state.vV.z = 0;
+
+				fprintf(f, "KOLIZJA z %d! Blokuje ruch do przodu!\n", it->first);
+				fflush(f);
+
+				// Wysy³amy ramkê, ¿eby on te¿ wiedzia³
+				Frame f_col;
+				f_col.iID = my_car->iID;
+				f_col.type = 1;
+				f_col.iID_receiver = it->first;
+				multi_send->send((char*)&f_col, sizeof(Frame));
+			}
+			else
+			{
+				// Jeœli iloczyn skalarny jest < 0, to znaczy ¿e siê cofamy
+				my_car->is_collided = false;
+			}
+			//break; // Sprawdziliœmy kolizjê, koñczymy pêtlê
+		}
+	}
+	LeaveCriticalSection(&m_cs);
+
 
 	Frame frame;
 	frame.state = my_car->State();               // state w³asnego obiektu 
