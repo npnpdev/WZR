@@ -17,6 +17,15 @@
 #include "net.h"
 using namespace std;
 
+// --- Funkcja do tworzenia konsoli debugowej ---
+void CreateDebugConsole()
+{
+	AllocConsole();
+	FILE* f;
+	freopen_s(&f, "CONOUT$", "w", stdout);
+	freopen_s(&f, "CONOUT$", "w", stderr);
+}
+
 FILE *f = fopen("wlog.txt", "w"); // plik do zapisu informacji testowych
 
 #define TYPE_STATE 0
@@ -281,6 +290,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	int       nCmdShow)
 {
 	
+	CreateDebugConsole();
+
 	//Initilize the critical section
 	InitializeCriticalSection(&m_cs);
 
