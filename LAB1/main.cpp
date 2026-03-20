@@ -31,8 +31,13 @@ float avg_cycle_time;                // sredni czas pomiedzy dwoma kolejnymi cyk
 long time_of_cycle, number_of_cyc;   // zmienne pomocnicze potrzebne do obliczania avg_cycle_time
 long time_start = clock();
 
-multicast_net *multi_reciv;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
-multicast_net *multi_send;           //   -||-  wysylaniem komunikatow
+//multicast_net *multi_reciv;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
+//multicast_net *multi_send;           //   -||-  wysylaniem komunikatow
+
+unicast_net* uni_reciv;
+unicast_net* uni_send;
+
+bool is_server = false; // 
 
 HANDLE threadReciv;                  // uchwyt w¹tku odbioru komunikatów
 HWND main_window;                    // uchwyt do g³ównego okna programu 
@@ -58,17 +63,80 @@ struct Frame                                      // g³ówna struktura s³u¿¹ca do
 };
 
 
+// --- KOD SERWERA ---
+struct ClientData {
+	unsigned long ip;    // IP klienta (w formacie liczbowym)
+	ObjectState state;   // Aktualny stan jego pojazdu
+};
+map<int, ClientData> registered_clients;
+
+DWORD WINAPI ServerReceiveThreadFun(void* ptr)
+{
+	Frame frame;
+	while (1)
+	{
+		unsigned long sender_ip;
+		int bytes = uni_reciv->reciv((char*)&frame, &sender_ip, (unsigned short)sizeof(Frame));
+
+		if (bytes > 0 && frame.type == TYPE_STATE)
+		{
+			// Rejestracja / Aktualizacja stanu gracza na serwerze
+			registered_clients[frame.iID].ip = sender_ip;
+			registered_clients[frame.iID].state = frame.state;
+
+			// LOGIKA KOLIZJI (Zadanie 5)
+			for (auto& other : registered_clients)
+			{
+				if (other.first == frame.iID) continue; // Nie sprawdzamy kolizji z samym sob¹
+
+				float dist = (frame.state.vPos - other.second.state.vPos).length();
+				float r1 = 4.5f; // r1 (po³owa length)
+				float r2 = 4.5f;
+
+				if (dist < (r1 + r2))
+				{
+					Vector3 wektor_do_auta = other.second.state.vPos - frame.state.vPos;
+					if ((frame.state.vV ^ wektor_do_auta) > 0)
+					{
+						printf("[!] KOLIZJA: Gracz %d uderzyl w gracza %d!\n", frame.iID, other.first);
+
+						// Odsy³amy mu zakaz ruchu! U¿ywamy IP, które odebraliœmy z reciv
+						Frame f_col;
+						f_col.iID = other.first;
+						f_col.type = TYPE_COLLISION;
+						f_col.iID_receiver = frame.iID;
+						uni_send->send((char*)&f_col, sender_ip, (unsigned short)sizeof(Frame));
+					}
+				}
+			}
+
+			// ROZSY£ANIE RUCHU DO INNYCH (Architektura klient-serwer)
+			for (auto& other : registered_clients)
+			{
+				if (other.first != frame.iID)
+				{
+					// U¿ywamy funkcji send z numerycznym adresem IP (unsigned long)
+					uni_send->send((char*)&frame, other.second.ip, (unsigned short)sizeof(Frame));
+				}
+			}
+		}
+	}
+	return 1;
+}
+// -------------------
+
 //******************************************
 // Funkcja obs³ugi w¹tku odbioru komunikatów 
 // UWAGA!  Odbierane s¹ te¿ komunikaty z w³asnej aplikacji by porównaæ obraz ekstrapolowany do rzeczywistego.
 DWORD WINAPI ReceiveThreadFun(void *ptr)
 {
-	multicast_net *pmt_net = (multicast_net*)ptr;  // wskaŸnik do obiektu klasy multicast_net
+	unicast_net *pmt_net = (unicast_net*)ptr;  // wskaŸnik do obiektu klasy multicast_net
 	Frame frame;
 
 	while (1)
 	{
-		int frame_size = pmt_net->reciv((char*)&frame, sizeof(Frame));   // oczekiwanie na nadejœcie ramki 
+		unsigned long sender_ip;
+		int frame_size = pmt_net->reciv((char*)&frame, &sender_ip, (unsigned short)sizeof(Frame));
 		ObjectState state = frame.state;
 
 		//fprintf(f, "odebrano stan iID = %d, ID dla mojego obiektu = %d\n", frame.iID, my_car->iID);
@@ -114,101 +182,68 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 void InteractionInitialisation()
 {
 	DWORD dwThreadId;
+	time_of_cycle = clock();
 
-	my_car = new MovableObject();    // tworzenie wlasnego obiektu
+	// Tworzymy auto zawsze, ¿eby grafika nie wywali³a b³êdu braku obiektu 
+	// (serwer po prostu stworzy sobie "ducha", którym nie bêdzie sterowa³)
+	my_car = new MovableObject();
 
-	time_of_cycle = clock();             // pomiar aktualnego czasu
+	if (is_server)
+	{
+		printf("--- START SERWERA ---\n");
+		uni_reciv = new unicast_net(1002); // Serwer odbiera na porcie 1002
+		uni_send = new unicast_net(1001);  // Serwer wysy³a na port 1001
 
-	// obiekty sieciowe typu multicast (z podaniem adresu WZR oraz numeru portu)
-	multi_reciv = new multicast_net("224.12.12.129", 10001);      // obiekt do odbioru ramek sieciowych
-	multi_send = new multicast_net("224.12.12.129", 10001);       // obiekt do wysy³ania ramek
+		// Uruchamiamy specjalny w¹tek serwerowy
+		threadReciv = CreateThread(NULL, 0, ServerReceiveThreadFun, NULL, 0, &dwThreadId);
+	}
+	else
+	{
+		printf("--- START KLIENTA ---\n");
+		uni_reciv = new unicast_net(1001); // Klient odbiera na porcie 1001
+		uni_send = new unicast_net(1002);  // Klient wysy³a na port 1002
 
-
-	// uruchomienie w¹tku obs³uguj¹cego odbiór komunikatów:
-	threadReciv = CreateThread(
-		NULL,                        // no security attributes
-		0,                           // use default stack size
-		ReceiveThreadFun,                // thread function
-		(void *)multi_reciv,               // argument to thread function
-		NULL,                        // use default creation flags
-		&dwThreadId);                // returns the thread identifier
+		// Uruchamiamy standardowy w¹tek klienta
+		threadReciv = CreateThread(NULL, 0, ReceiveThreadFun, (void*)uni_reciv, 0, &dwThreadId);
+	}
 	SetThreadPriority(threadReciv, THREAD_PRIORITY_HIGHEST);
-
-	printf("start interakcji\n");
 }
-
 
 // *****************************************************************
 // ****    Wszystko co trzeba zrobiæ w ka¿dym cyklu dzia³ania 
 // ****    aplikacji poza grafik¹ 
 void VirtualWorldCycle()
 {
-	number_of_cyc++;
-
-	if (number_of_cyc % 50 == 0)          // jeœli licznik cykli przekroczy³ pewn¹ wartoœæ, to
-	{                              // nale¿y na nowo obliczyæ œredni czas cyklu avg_cycle_time
-		char text[256];
-		long prev_time = time_of_cycle;
-		time_of_cycle = clock();
-		float fFps = (50 * CLOCKS_PER_SEC) / (float)(time_of_cycle - prev_time);
-		if (fFps != 0) avg_cycle_time = 1.0 / fFps; else avg_cycle_time = 1;
-
-		sprintf(text, "WZR-lab lato 2025/26 temat 1, wersja h (%0.0f fps  %0.2fms) ", fFps, 1000.0 / fFps);
-
-		SetWindowText(main_window, text); // wyœwietlenie aktualnej iloœci klatek/s w pasku okna			
+	if (is_server)
+	{
+		// Serwer wszystkie obliczenia wykonuje w w¹tku ServerReceiveThreadFun
+		Sleep(10);
 	}
+	else
+	{
+		number_of_cyc++;
 
-	my_car->Simulation(avg_cycle_time);                    // symulacja w³asnego obiektu
+		if (number_of_cyc % 50 == 0)
+		{
+			char text[256];
+			long prev_time = time_of_cycle;
+			time_of_cycle = clock();
+			float fFps = (50 * CLOCKS_PER_SEC) / (float)(time_of_cycle - prev_time);
+			if (fFps != 0) avg_cycle_time = 1.0 / fFps; else avg_cycle_time = 1;
 
-
-	// Detekcja kolizji
-	EnterCriticalSection(&m_cs);
-	for (map<int, MovableObject*>::iterator it = other_cars.begin(); it != other_cars.end(); ++it) {
-
-		float dist = (my_car->state.vPos - it->second->state.vPos).length();
-		float r1 = my_car->length / 2.0f;
-		float r2 = it->second->length / 2.0f;
-
-		if (dist < (r1 + r2)) {
-			// Obliczamy wektor "od nas do drugiego auta"
-			Vector3 wektor_do_auta = it->second->state.vPos - my_car->state.vPos;
-
-			// Iloczyn skalarny
-			// Jeœli wynik jest > 0, to nasza prêdkoœæ pcha nas W STRONÊ tamtego auta (pog³êbiamy kolizjê)
-			if ((my_car->state.vV ^ wektor_do_auta) > 0)
-			{
-				my_car->is_collided = true;
-
-				// Zatrzymujemy auto
-				my_car->state.vV.x = 0;
-				my_car->state.vV.z = 0;
-
-				fprintf(f, "KOLIZJA z %d! Blokuje ruch do przodu!\n", it->first);
-				fflush(f);
-
-				// Wysy³amy ramkê, ¿eby on te¿ wiedzia³
-				Frame f_col;
-				f_col.iID = my_car->iID;
-				f_col.type = 1;
-				f_col.iID_receiver = it->first;
-				multi_send->send((char*)&f_col, sizeof(Frame));
-			}
-			else
-			{
-				// Jeœli iloczyn skalarny jest < 0, to znaczy ¿e siê cofamy
-				my_car->is_collided = false;
-			}
-			//break; // Sprawdziliœmy kolizjê, koñczymy pêtlê
+			sprintf(text, "WZR-lab (KLIENT) (%0.0f fps  %0.2fms) ", fFps, 1000.0 / fFps);
+			SetWindowText(main_window, text);
 		}
+
+		my_car->Simulation(avg_cycle_time);
+
+		Frame frame;
+		frame.state = my_car->State();
+		frame.iID = my_car->iID;
+		frame.type = TYPE_STATE;
+
+		uni_send->send((char*)&frame, (char*)"127.0.0.1", (unsigned short)sizeof(Frame));
 	}
-	LeaveCriticalSection(&m_cs);
-
-
-	Frame frame;
-	frame.state = my_car->State();               // state w³asnego obiektu 
-	frame.iID = my_car->iID;
-
-	multi_send->send((char*)&frame, sizeof(Frame));  // wys³anie komunikatu do pozosta³ych aplikacji
 }
 
 // *****************************************************************

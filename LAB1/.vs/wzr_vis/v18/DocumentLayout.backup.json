@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\quaternion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:quaternion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\vector3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:vector3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,45 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "objects.h",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.h",
               "RelativeDocumentMoniker": "objects.h",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.h",
               "RelativeToolTip": "objects.h",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-06T08:58:47.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "vector3D.cpp",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\vector3D.cpp",
-              "RelativeDocumentMoniker": "vector3D.cpp",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\vector3D.cpp",
-              "RelativeToolTip": "vector3D.cpp",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAuwKkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-06T08:48:45.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "quaternion.cpp",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\quaternion.cpp",
-              "RelativeDocumentMoniker": "quaternion.cpp",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\quaternion.cpp",
-              "RelativeToolTip": "quaternion.cpp",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAYwJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-06T08:47:29.027Z",
+              "WhenOpened": "2026-03-06T09:44:57.416Z",
               "EditorCaption": ""
             },
             {
@@ -79,7 +45,7 @@
               "RelativeDocumentMoniker": "objects.cpp",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.cpp",
               "RelativeToolTip": "objects.cpp",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAAAO0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAAAOsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T08:47:18.642Z",
               "EditorCaption": ""
@@ -92,7 +58,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAIwFsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T08:40:45.294Z",
               "EditorCaption": ""
