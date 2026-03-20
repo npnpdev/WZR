@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\net.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:net.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1BD39C38-DE1E-49B2-B272-430161AAF2E2}|wzr_vis.vcxproj|solutionrelative:objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -27,25 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "objects.h",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.h",
-              "RelativeDocumentMoniker": "objects.h",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.h",
-              "RelativeToolTip": "objects.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "net.h",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\net.h",
+              "RelativeDocumentMoniker": "net.h",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\net.h",
+              "RelativeToolTip": "net.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-06T09:44:57.416Z",
+              "WhenOpened": "2026-03-20T08:47:04.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "objects.cpp",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.cpp",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\objects.cpp",
               "RelativeDocumentMoniker": "objects.cpp",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\objects.cpp",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\objects.cpp",
               "RelativeToolTip": "objects.cpp",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAAAOsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAoCAAAAAAAAAAAswC0CAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T08:47:18.642Z",
               "EditorCaption": ""
@@ -54,11 +54,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Kopia_zapasowa\\Ja\\STUDIA\\SEM6\\Wirtualne zespo\u0142y robocze\\LAB1\\WZR\\LAB1\\main.cpp",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\LAB2_C1\\WZR\\LAB1\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAswOUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T08:40:45.294Z",
               "EditorCaption": ""

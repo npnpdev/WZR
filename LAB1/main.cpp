@@ -80,6 +80,11 @@ DWORD WINAPI ServerReceiveThreadFun(void* ptr)
 
 		if (bytes > 0 && frame.type == TYPE_STATE)
 		{
+			if (is_server) {
+				printf("[Serwer] Odebrano pozycje od Gracza %d. Przesylam dalej...\n", frame.iID);
+
+			}
+
 			// Rejestracja / Aktualizacja stanu gracza na serwerze
 			registered_clients[frame.iID].ip = sender_ip;
 			registered_clients[frame.iID].state = frame.state;
@@ -120,6 +125,9 @@ DWORD WINAPI ServerReceiveThreadFun(void* ptr)
 				}
 			}
 		}
+
+
+
 	}
 	return 1;
 }
@@ -138,6 +146,10 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 		unsigned long sender_ip;
 		int frame_size = pmt_net->reciv((char*)&frame, &sender_ip, (unsigned short)sizeof(Frame));
 		ObjectState state = frame.state;
+
+		if (frame.iID != my_car->iID && frame_size > 0 && is_server==false) {
+			printf("[Klient %d] Widze ruch gracza %d!\n", my_car->iID, frame.iID);
+		}
 
 		//fprintf(f, "odebrano stan iID = %d, ID dla mojego obiektu = %d\n", frame.iID, my_car->iID);
 
