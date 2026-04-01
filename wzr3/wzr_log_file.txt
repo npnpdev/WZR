@@ -1,0 +1,22 @@
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 276
+poczatek interakcji
+my_vehicle->iID = 41
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 397
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.06[s]  œr.czêstoœæ = 0.94[r/s]  œr.odl = 4.734[m]  œr.ró¿n.k¹t. = 5.323[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 609
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.12[s]  œr.czêstoœæ = 0.94[r/s]  œr.odl = 4.361[m]  œr.ró¿n.k¹t. = 4.122[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 998
+poczatek interakcji
+my_vehicle->iID = 41
+Koniec interakcji
