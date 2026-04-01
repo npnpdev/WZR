@@ -4,18 +4,18 @@ C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(28,11): warning C4996: 'fopen':
 C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(161,28): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
 C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(163,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(195,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(521,79): warning C4305: "/=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(528,77): warning C4305: "*=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(554,45): warning C4305: "+=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(559,45): warning C4305: "-=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(580,31): warning C4305: "/=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(588,31): warning C4305: "*=": obcięcie z "double" do "float"
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(604,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(605,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(606,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(610,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(611,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(612,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(618,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(686): warning C4715: "WndProc”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(531,79): warning C4305: "/=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(538,77): warning C4305: "*=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(564,45): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(569,45): warning C4305: "-=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(590,31): warning C4305: "/=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(598,31): warning C4305: "*=": obcięcie z "double" do "float"
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(614,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(615,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(616,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(620,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(621,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(622,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(628,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\main.cpp(696): warning C4715: "WndProc”: niewszystkie ścieżki kodu zwracają wartość
   wzr_vis.vcxproj -> C:\Users\PC\Desktop\WZR_GITHUB\WZR\wzr3\Debug\wzr_vis.exe

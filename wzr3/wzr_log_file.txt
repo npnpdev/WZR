@@ -20,3 +20,9 @@ my_vehicle->iID = 998
 poczatek interakcji
 my_vehicle->iID = 41
 Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 381
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.12[s]  œr.czêstoœæ = 0.94[r/s]  œr.odl = 3.846[m]  œr.ró¿n.k¹t. = 3.155[st]
+Koniec interakcji

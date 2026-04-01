@@ -248,7 +248,15 @@ void VirtualWorldCycle()
 
 		veh->state.vV_ang = veh->state.vV_ang + veh->state.vA_ang * fDt;
 
+		// Pobieramy wysokoœæ gruntu
+		float ground_y = planet_terrain.DistFromGround(veh->state.vPos.x, veh->state.vPos.z);
 
+		// Jeœli pozycja Y pojazdu jest mniejsza ni¿ wysokoœæ gruntu -> pojazd zanurkowa³
+		if (veh->state.vPos.y < ground_y)
+		{
+			// Wyci¹gamy pojazd na powierzchniê
+			veh->state.vPos.y = ground_y;
+		}
 	}
 	//Release the Critical section
 	LeaveCriticalSection(&m_cs);
